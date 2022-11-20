@@ -1,4 +1,4 @@
-# Vue 3 Starter with unocss and naiveui
+# Vue 3 Starter
 
 [![Author](https://img.shields.io/badge/Author-Wyatex-green)](https://github.com/Wyatex/)
 [![Issues](https://img.shields.io/github/issues/Wyatex/Vue3-starter)](https://github.com/Wyatex/Vue3-starter/issues)
@@ -6,37 +6,37 @@
 
 > Um conjunto de integração Vite 2.x + Vue 3.x + TypeScript + Vue Router + Pinia + Axios + ESlint Modelos de desenvolvimento rápido para kits iguais。
 
-## Start
+[visualização online](https://wyatex.gitee.io/vue3-starter/)
 
-### Projetc download
+## Início rápido
 
-git clone
+### Projeto de download
+
+Use Git para clonagem
 
 ```sh
-git clone https://github.com/rogerscardua/Vue3-starter-unocss-naive.git
+git clone https://github.com/Wyatex/Vue3-starter.git
 ```
-
-### dependecy install
+### Dependências de instalação
 
 ```sh
 yarn
 ```
 
-### start dev
+### Iniciar o servidor de dev e construir
 
 dev
-
 ```sh
 yarn dev
 ```
 
-Construction, the standard packaging for'./dist'
+Construção, a embalagem padrão para'./dist'
 
 ```sh
 yarn build
 ```
 
-## tecnology
+## pilha de tecnologia
 
 - Linguagem de programação:[Typescript](https://www.typescriptlang.org/zh/) + [Javascript](https://www.javascript.com/)
 - Construir ferramentas：[Vite2](https://vitejs.cn/)
@@ -50,17 +50,16 @@ yarn build
 - Especificação de código:[ESLint](https://eslint.org/) + [Prettier](https://prettier.io/)
 - teste de unidade:[vitest](https://vitest.dev/) + [vue-test-utils](https://vue-test-utils.vuejs.org/zh/)
 - Biblioteca de componentes:[Naive-UI](https://www.naiveui.com/)
-- Icon 库：[@iconify/json](https://www.npmjs.com/package/@iconify/json) + [@iconify/vue](https://www.npmjs.com/package/@iconify/vue) + [unplugin-icons](https://github.com/antfu/unplugin-icons)
+- Icon ：[@iconify/json](https://www.npmjs.com/package/@iconify/json) + [@iconify/vue](https://www.npmjs.com/package/@iconify/vue) + [unplugin-icons](https://github.com/antfu/unplugin-icons)
 
-> icon search：[icones](https://icones.js.org/)
+> icon Pesquisa de ícone：[icones](https://icones.js.org/)
 
-## Project config
+## Configuração do projeto
 
-files config:
+Os itens de configuração principal atual:
 - src/settings/index.ts
 - .env(.development / .production)
 - vite.config.js
 
-DX UI
-
-This branch uses NAIVEUI which will use other component libraries in other branches like ANTDV and ElementUi so stay tuned!
+Biblioteca de componentes da UI
+Este ramo usa o NAIVEUI, que usará outras bibliotecas de componentes em outras filiais, como ANTDV e ElementUi, então fique atento!

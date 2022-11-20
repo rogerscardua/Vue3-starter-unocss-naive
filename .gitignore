@@ -1,0 +1,7 @@
+node_modules
+.DS_Store
+*.local
+pnpm-lock.yaml
+yarn.lock
+
+components.d.ts
