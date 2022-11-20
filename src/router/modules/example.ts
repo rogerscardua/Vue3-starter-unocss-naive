@@ -81,16 +81,6 @@ const routes: Array<RouteRecordRaw> = [
       },
     ],
   },
-  {
-    path: '/blog',
-    name: 'https://wyatex.gitee.io',
-    component: layout,
-    meta: {
-      title: 'Blog de autor',
-      icon: iconifyRender('jam:blogger-circle'),
-      isRoot: true,
-    },
-  },
 ]
 
 export default routes

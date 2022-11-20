@@ -18,12 +18,12 @@ export const useRouteStore = defineStore({
   }),
   actions: {
     setKeepAliveComponents(compNames: string[]) {
-      // 设置需要缓存的组件
+      // Defina o componente que precisa ser armazenado em cache
       this.keepAliveComponents = compNames
     },
     /**
-     * 重载页面
-     * @param duration - 重载的延迟时间(ms)
+     * Página de sobrecarga
+     * @param duration - Dedução de carga pesada(ms)
      */
     async reloadPage(duration = 0) {
       this.reloadFlag = false

@@ -24,5 +24,13 @@
       "naive-ui/volar"
     ]
   },
-  "exclude": ["dist", "node_modules"]
+  "exclude": ["dist", "node_modules"],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.spec.ts",
+    "src/**/*.vue",
+    "**/*.*"
+  ]
 }

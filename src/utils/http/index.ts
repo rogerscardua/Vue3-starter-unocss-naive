@@ -9,9 +9,9 @@ const instance = Axios.create({
 
 instance.interceptors.request.use(
   config => {
-    // 按照业务需求填写，比如：
+    // Preencha de acordo com as necessidades comerciais, como:
 
-    //   // 请求加上token
+    //   // token
     //   if (storage.get('token')) {
     //     // jwt token
     //     config.headers.Authorization = 'Bearer ' + storage.get('token')
@@ -19,7 +19,7 @@ instance.interceptors.request.use(
     return config
   },
   err => {
-    // 错误处理
+    // Tratamento de erro
     console.error(err)
     return Promise.reject(err)
   }
@@ -27,11 +27,11 @@ instance.interceptors.request.use(
 
 instance.interceptors.response.use(
   response => {
-    // 按照业务需求填写，比如只返回响应的body，不返回status code等信息
+    // Preencher de acordo com as necessidades de negócios，Por exemplo, apenas retorne à resposta body，Não retornar \status code Informação igual
     return response.data
   },
   err => {
-    // 错误处理
+    // Tratamento de erro
     console.error(err)
     return Promise.reject(err)
   }

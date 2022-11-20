@@ -3,7 +3,7 @@ import { defaultCacheTime } from '@/settings'
 const DEFAULT_CACHE_TIME = defaultCacheTime
 
 /**
- * 创建本地缓存对象
+ * Crie um objeto de cache local
  * @param {string=} prefixKey -
  * @param {Object} [storage=localStorage] - sessionStorage | localStorage
  */
@@ -12,7 +12,7 @@ export const createStorage = ({
   storage = localStorage,
 } = {}) => {
   /**
-   * 本地缓存类
+   * Cache local
    * @class Storage
    */
   const Storage = class {
@@ -24,9 +24,9 @@ export const createStorage = ({
     }
 
     /**
-     * @description 设置缓存
-     * @param {string} key 缓存键
-     * @param {*} value 缓存值
+     * @description Defina o cache
+     * @param {string} key Chave de cache
+     * @param {*} value Valor do cache
      * @param expire
      */
     set(
@@ -42,9 +42,9 @@ export const createStorage = ({
     }
 
     /**
-     * 读取缓存
-     * @param {string} key 缓存键
-     * @param {*=} def 默认值
+     * Leia o cache
+     * @param {string} key Chave de cache
+     * @param {*=} def Padrões
      */
     get(key: string, def: unknown = null) {
       const item = this.storage.getItem(this.getKey(key))
@@ -52,7 +52,7 @@ export const createStorage = ({
         try {
           const data = JSON.parse(item)
           const { value, expire } = data
-          // 在有效期内直接返回
+          // Retornar diretamente dentro do período de validade
           if (expire === null || expire >= Date.now()) {
             return value
           }
@@ -65,7 +65,7 @@ export const createStorage = ({
     }
 
     /**
-     * 从缓存删除某项
+     * Exclua um certo item do cache
      * @param {string} key
      */
     remove(key: string) {
@@ -73,7 +73,7 @@ export const createStorage = ({
     }
 
     /**
-     * 清空所有缓存
+     * Limpe todo o cache
      * @memberOf Cache
      */
     clear(): void {
@@ -81,11 +81,11 @@ export const createStorage = ({
     }
 
     /**
-     * 设置cookie
-     * @param {string} name cookie 名称
-     * @param {*} value cookie 值
-     * @param {number=} expire 过期时间
-     * 如果过期时间为设置，默认关闭浏览器自动删除
+     * configurar cookie
+     * @param {string} name cookie nome
+     * @param {*} value cookie valor
+     * @param {number=} expire Expiração
+     * Se o tempo de validade for definido, o navegador será fechado automaticamente por padrão
      * @example
      */
     setCookie(
@@ -97,7 +97,7 @@ export const createStorage = ({
     }
 
     /**
-     * 根据名字获取cookie值
+     * Obtenha -o de acordo com o nome cookie valor
      * @param name
      */
     getCookie(name: string): string {
@@ -112,7 +112,7 @@ export const createStorage = ({
     }
 
     /**
-     * 根据名字删除指定的cookie
+     * Exclua especificado de acordo com o nome cookie
      * @param {string} key
      */
     removeCookie(key: string) {
@@ -120,7 +120,7 @@ export const createStorage = ({
     }
 
     /**
-     * 清空cookie，使所有cookie失效
+     * Vazio cookie，Faça tudo cookie Falhou
      */
     clearCookie(): void {
       const keys = document.cookie.match(/[^ =;]+(?==)/g)

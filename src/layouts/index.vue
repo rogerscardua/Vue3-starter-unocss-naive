@@ -4,7 +4,7 @@
       <n-layout-sider 
         :collapsed="collapsed"
         :collapsed-width="64"
-        :width="200"
+        :width="250"
         :inverted="inverted"
         collapse-mode="width"
         class="layout-sider"
@@ -44,6 +44,7 @@
 </template>
 
 <script lang="ts" setup>
+import { useMobileDetection } from "vue3-mobile-detection";
 import { useSettingStore } from '@/store/modules/setting'
 import NaiveProvider from '@/components/common/NaiveProvider/index.vue'
 import MenuView from './components/menu.vue'
@@ -51,6 +52,9 @@ import HeaderView from './components/header.vue'
 import ContentView from './components/content.vue'
 import LogoView from './components/logo.vue'
 const settingStore = useSettingStore()
+
+
+const { isMobile } = useMobileDetection();
 
 const collapsed = ref<boolean>(false)
 const inverted = computed(() => settingStore.darkTheme)

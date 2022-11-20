@@ -2,10 +2,10 @@ import { h } from 'vue'
 import { Icon } from '@iconify/vue'
 
 /**
- * 动态渲染iconify
- * @param icon - 图标名称
- * @param color - 图标颜色
- * @param size - 图标大小
+ * Iconificação dinâmica de renderização
+ * @param icon - Nome do ícone
+ * @param color - Cor do ícone
+ * @param size - Tamanho do ícone
  */
 export function iconifyRender(icon: string, color?: string, size?: number) {
   const style: { color?: string; size?: string } = {}

@@ -10,7 +10,7 @@ export interface EncryptionParams {
   iv?: string
 }
 
-// 提供简单的aes-ECB加密，如有其他需求按需进行改造
+// Fornecendo simples aes-ECB Criptografia, se houver outras necessidades, renovar conforme necessário
 export class AesECBEncryption {
   private key
   private options

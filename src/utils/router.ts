@@ -1,14 +1,14 @@
 import type { RouteRecord } from "vue-router"
 
 /**
- * 判断根路由 Router
+ * Julgamento Rooting Rooting Router
  * */
 export function isRootRouter(item: RouteRecord) {
   return item.meta?.isRoot === true && item.children?.length === 1
 }
 
 /**
- * 排除Router
+ * Exclua o roteador
  * */
 export function filterRouter(routerMap: Array<any>) {
   return routerMap.filter(item => {
@@ -20,7 +20,7 @@ export function filterRouter(routerMap: Array<any>) {
 }
 
 /**
- * 递归组装菜单格式
+ * Formato de montagem recursiva Formato
  */
 export function generatorMenu(routerMap: Array<any>) {
   return filterRouter(routerMap).map(item => {
@@ -33,7 +33,7 @@ export function generatorMenu(routerMap: Array<any>) {
       key: info.name,
       icon: isRoot ? item.meta?.icon : info.meta?.icon,
     }
-    // 是否有子菜单，并递归处理
+    // Se existe um submenu e processamento recursivo
     if (!isRoot && info.children && info.children.length > 0) {
       // Recursion
       currentMenu.children = generatorMenu(info.children)

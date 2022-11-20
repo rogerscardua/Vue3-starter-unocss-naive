@@ -16,7 +16,7 @@ export const useSettingStore = defineStore({
   actions: {},
 })
 
-// 在setup以外的地方使用
+// Use configuração externa
 export function useSettingStoreOutOfSetup() {
   return useSettingStore(store)
 }
