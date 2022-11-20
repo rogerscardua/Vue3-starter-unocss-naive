@@ -1,4 +1,4 @@
-# Vue 3 Starter
+# Vue 3 Starter with unocss and naiveui
 
 [![Author](https://img.shields.io/badge/Author-Wyatex-green)](https://github.com/Wyatex/)
 [![Issues](https://img.shields.io/github/issues/Wyatex/Vue3-starter)](https://github.com/Wyatex/Vue3-starter/issues)
