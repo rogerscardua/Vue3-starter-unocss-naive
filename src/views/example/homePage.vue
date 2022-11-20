@@ -40,7 +40,7 @@ const handlerBtn = () => {
   })
 }
 const onOpenMyGithub = () => {
-  window.open('https://github.com/Wyatex')
+  window.open('https://github.com/rogerscardua')
 }
 </script>
 
