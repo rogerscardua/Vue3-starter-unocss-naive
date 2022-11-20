@@ -6,44 +6,43 @@
 
 > Um conjunto de integração Vite 2.x + Vue 3.x + TypeScript + Vue Router + Pinia + Axios + ESlint Modelos de desenvolvimento rápido para kits iguais。
 
-[visualização online](https://wyatex.gitee.io/vue3-starter/)
+## Start
 
-## Início rápido
-
-### Projeto de download
+### Projetc download
 
 Use Git para clonagem
 
 ```sh
-git clone https://github.com/Wyatex/Vue3-starter.git
+git clone https://github.com/rogerscardua/Vue3-starter-unocss-naive.git
 ```
-### Dependências de instalação
+
+### dependecy install
 
 ```sh
 yarn
 ```
 
-### Iniciar o servidor de dev e construir
+### start dev
 
-启动 dev 服务器
+dev
 
 ```sh
 yarn dev
 ```
 
-Construção, a embalagem padrão para'./dist'
+Construction, the standard packaging for'./dist'
 
 ```sh
 yarn build
 ```
 
-## pilha de tecnologia
+## tecnology
 
 - Linguagem de programação:[Typescript](https://www.typescriptlang.org/zh/) + [Javascript](https://www.javascript.com/)
 - Construir ferramentas：[Vite2](https://vitejs.cn/)
 - Frente -nd Framework:[Vue3](https://v3.cn.vuejs.org/)
 - Gerenciamento de roteamento:[Vue-Router4](https://next.router.vuejs.org/zh/index.html)
-- 状态管理：[pinia](https://pinia.esm.dev/)
+- [pinia](https://pinia.esm.dev/)
 - CSS Pré-processando：[Less](https://less.bootcss.com/)
 - CSS motor：[UnoCSS](https://github.com/unocss/unocss)
 - HTTP ferramenta:[Axios](https://axios-http.com/)
@@ -53,14 +52,15 @@ yarn build
 - Biblioteca de componentes:[Naive-UI](https://www.naiveui.com/)
 - Icon 库：[@iconify/json](https://www.npmjs.com/package/@iconify/json) + [@iconify/vue](https://www.npmjs.com/package/@iconify/vue) + [unplugin-icons](https://github.com/antfu/unplugin-icons)
 
-> icon Pesquisa de ícone：[icones](https://icones.js.org/)
+> icon search：[icones](https://icones.js.org/)
 
-## Configuração do projeto
+## Project config
 
-Os itens de configuração principal atual:
+files config:
 - src/settings/index.ts
 - .env(.development / .production)
 - vite.config.js
 
-Biblioteca de componentes da UI
-Este ramo usa o NAIVEUI, que usará outras bibliotecas de componentes em outras filiais, como ANTDV e ElementUi, então fique atento!
+DX UI
+
+This branch uses NAIVEUI which will use other component libraries in other branches like ANTDV and ElementUi so stay tuned!
