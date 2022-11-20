@@ -10,7 +10,7 @@
 
 ### Projetc download
 
-Use Git para clonagem
+git clone
 
 ```sh
 git clone https://github.com/rogerscardua/Vue3-starter-unocss-naive.git
