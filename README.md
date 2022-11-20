@@ -15,7 +15,7 @@
 Use Git para clonagem
 
 ```sh
-git clone https://github.com/Wyatex/Vue3-starter.git
+git clone https://github.com/rogerscardua/Vue3-starter-unocss-naive.git
 ```
 ### Dependências de instalação
 

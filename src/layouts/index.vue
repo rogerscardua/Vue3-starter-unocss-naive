@@ -1,7 +1,7 @@
 <template>
   <naive-provider>
     <n-layout class="layout" has-sider>
-      <n-layout-sider
+      <n-layout-sider 
         :collapsed="collapsed"
         :collapsed-width="64"
         :width="200"
